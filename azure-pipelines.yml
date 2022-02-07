@@ -83,7 +83,7 @@ stages:
             inputs:
               action: deploy
               kubernetesServiceConnection: 'OpenShift-azuredevops-1644211538247'
-              namespace: 'default'
+              namespace: 'azuredevops'
               manifests: |
                 $(Pipeline.Workspace)/manifests/deployment.yml
                 $(Pipeline.Workspace)/manifests/service.yml
